@@ -65,7 +65,7 @@
 
 
 ;; Exercício 6
-(define cat "../T2/cat.png")
+(define cat "../tarefa 2/cat.png")
 (define (conta-pixels img)
   (* (image-height cat) (image-width cat)))
 #|
@@ -85,7 +85,7 @@
 
 
 ;; Exercício 8
-#|(define cat "../T2/cat.png")
+#|(define cat "../tarefa 2/cat.png")
 deixei como comentário pois "cat" já foi definida no exercício 6. |#
 (define (tall-wide img)
   (if (> (image-height img) (image-width img))
@@ -122,7 +122,7 @@ deixei como comentário pois "cat" já foi definida no exercício 6. |#
 > (converter in)
 2
 
-> (converter "../T2/cat.png")
+> (converter "../tarefa 2/cat.png")
 8775
 > (converter 17)
 16
@@ -205,9 +205,9 @@ deixei como comentário pois "cat" já foi definida no exercício 6. |#
 (define (count-pixels img)
   (* (image-height img) (image-width img)))
 #|
-> (count-pixels "../T2/cat.png")
+> (count-pixels "../tarefa 2/cat.png")
 8775
-> (count-pixels "../T2/rocket.png")
+> (count-pixels "../tarefa 2/rocket.png")
 1176 |#
 
 
@@ -217,9 +217,9 @@ deixei como comentário pois "cat" já foi definida no exercício 6. |#
       "tall"
       (if (= (image-height img) (image-width img)) "square" "wide")))
 #|
-> (tallwidesquare "../T2/cat.png")
+> (tallwidesquare "../tarefa 2/cat.png")
 "tall"
-> (tallwidesquare "../T2/rocket.png")
+> (tallwidesquare "../tarefa 2/rocket.png")
 "tall" |#
 
 
@@ -319,21 +319,21 @@ deixei como comentário pois "cat" já foi definida no exercício 6. |#
     [(= (image-height img) (image-width img)) "square"]
     [(<= (image-height img) (image-width img)) "wide"]))
 
-(image-classify "../T2/cat.png")
+(image-classify "../tarefa 2/cat.png")
 #|
-(image-classify "../T2/cat.png")
+(image-classify "../tarefa 2/cat.png")
 (cond
-  ((>= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "tall")
-  ((= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "square")
-  ((<= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "wide"))
+  ((>= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "tall")
+  ((= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "square")
+  ((<= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "wide"))
 (cond
   ((>= 117 75) "tall")
-  ((= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "square")
-  ((<= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "wide"))
+  ((= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "square")
+  ((<= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "wide"))
 (cond
   (#true "tall")
-  ((= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "square")
-  ((<= (image-height "../T2/cat.png") (image-width "../T2/cat.png")) "wide"))
+  ((= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "square")
+  ((<= (image-height "../tarefa 2/cat.png") (image-width "../tarefa 2/cat.png")) "wide"))
 "tall" |#
 
 
